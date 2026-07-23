@@ -1,8 +1,29 @@
 aid: baker-technologies
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/baker-technologies.png
 name: Baker Technologies
-description: Baker Technologies is a company surfaced as a portfolio company of 500-global and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Baker Technologies (Baker) was a Denver, Colorado based customer relationship
+  management (CRM) and marketing platform built for the cannabis industry,
+  founded in 2014 by David Champion, Joel Milton, and Roger Obando. A graduate of
+  the 500 Startups accelerator, Baker helped licensed dispensaries grow revenue and
+  build customer relationships through online ordering, loyalty programs, SMS/text
+  messaging, and analytics, and launched an expanded integrations program with a
+  developer API connecting dispensaries to 20+ ancillary cannabis services. The
+  company raised approximately $11.75M (including an $8M Series A) before being
+  acquired by TILT Holdings in 2018. The trybaker.com domain is now parked and
+  listed for sale, indicating the product has been discontinued; no live developer
+  portal, API documentation, or specifications are publicly available.
 url: https://raw.githubusercontent.com/api-evangelist/baker-technologies/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +31,21 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-reason: acquired-by-tilt-holdings-2018-domain-parked
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Cannabis
+- CRM
+- Marketing
+- Dispensary
+- Loyalty
+- Online Ordering
+- Analytics
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +53,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/baker-technologies-domain-security.yml
 - type: Website
   url: https://trybaker.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
